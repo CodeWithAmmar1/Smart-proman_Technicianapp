@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 
 class SplashController extends GetxController {
   RxDouble progress = 0.0.obs;
-
   @override
   void onReady() {
     super.onReady();
@@ -13,7 +12,7 @@ class SplashController extends GetxController {
         progress.value = 1.0;
         timer.cancel();
         Get.offNamed('/home');
-      }
+      } 
     });
   }
 }
