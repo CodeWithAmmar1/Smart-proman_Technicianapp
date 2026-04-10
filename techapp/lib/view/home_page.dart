@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Home')),
       body: const Center(
-        child: Text('Welcome to Azam pro Man!', style: TextStyle(fontSize: 20)), 
+        child: Text('Branch setup!', style: TextStyle(fontSize: 20)), 
       ),
     );
   }
