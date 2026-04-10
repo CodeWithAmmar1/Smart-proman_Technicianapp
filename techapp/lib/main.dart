@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'controller/splash_controller.dart';
 import 'view/home_page.dart';
 import 'view/splash_page.dart';

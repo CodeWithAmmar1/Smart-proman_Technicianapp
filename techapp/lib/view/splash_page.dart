@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../controller/splash_controller.dart';
 
-class SplashPage extends GetView<SplashController> {
-  const SplashPage({super.key});
 
+class SplashPage extends StatelessWidget {
+  const SplashPage({super.key});
   @override
   Widget build(BuildContext context) {
+    final SplashController controller = Get.find<SplashController>();
     return Scaffold(
       backgroundColor: const Color(0xFFF8FAFC),
       body: SafeArea(
@@ -92,13 +92,14 @@ class SplashPage extends GetView<SplashController> {
                   const SizedBox(height: 12),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(12),
-                    child: LinearProgressIndicator(
+                    child: Obx(() => LinearProgressIndicator(
+                      value: controller.progress.value,
                       minHeight: 8,
                       valueColor: const AlwaysStoppedAnimation<Color>(
                         Color(0xFF2563EB),
                       ),
                       backgroundColor: const Color(0xFFDDF2FF),
-                    ),
+                    )),
                   ),
 
                   const SizedBox(height: 16),
