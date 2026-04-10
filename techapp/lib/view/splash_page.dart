@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controller/splash_controller.dart';
 
-
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
   @override
