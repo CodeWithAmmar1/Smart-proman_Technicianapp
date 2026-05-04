@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:techapp/view/fir.dart';
+import 'package:techapp/view/job_req.dart';
 import 'package:techapp/view/setting.dart';
 
 class TechInfo extends StatelessWidget {
@@ -93,7 +94,7 @@ class TechInfo extends StatelessWidget {
               const Spacer(),
               ElevatedButton(
                 onPressed: () {
-                  Get.to(() => const FirPage());
+                  Get.to(() => const JobRequestPage());
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue.shade700,

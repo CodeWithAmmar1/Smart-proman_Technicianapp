@@ -185,20 +185,6 @@ class OnWayPage extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
-                          Container(
-                            width: 64,
-                            height: 64,
-                            decoration: BoxDecoration(
-                              color: Colors.blue.shade50,
-                              borderRadius: BorderRadius.circular(18),
-                            ),
-                            child: const Icon(
-                              Icons.person,
-                              size: 34,
-                              color: Colors.blue,
-                            ),
-                          ),
-                          const SizedBox(width: 16),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -228,6 +214,20 @@ class OnWayPage extends StatelessWidget {
                                   ),
                                 ),
                               ],
+                            ),
+                          ),
+                          Container(
+                            width: 65,
+                            height: 65,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(color: Colors.white24),
+                              image: const DecorationImage(
+                                image: NetworkImage(
+                                  'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=256&q=80',
+                                ),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
                         ],
