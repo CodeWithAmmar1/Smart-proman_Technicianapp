@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:techapp/view/onWay.dart';
 
 class InvoicePage extends StatefulWidget {
   const InvoicePage({super.key});
@@ -449,9 +451,7 @@ class _InvoicePageState extends State<InvoicePage> {
                   height: 56,
                   child: ElevatedButton(
                     onPressed: () {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('Invoice sent via email')),
-                      );
+                      Get.to(() => const OnWayPage());
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blue.shade700,
