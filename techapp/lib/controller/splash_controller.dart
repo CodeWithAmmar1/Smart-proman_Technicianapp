@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:get/get.dart';
+import 'package:techapp/view/auth/signup.dart';
 
 class SplashController extends GetxController {
   RxDouble progress = 0.0.obs;
@@ -11,8 +12,8 @@ class SplashController extends GetxController {
       if (progress.value >= 1.0) {
         progress.value = 1.0;
         timer.cancel();
-        Get.offNamed('/home');
-      } 
+        Get.offAll(() => SignupScreen());
+      }
     });
   }
 }

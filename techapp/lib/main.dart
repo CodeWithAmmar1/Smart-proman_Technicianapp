@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:techapp/controller/auth_controller.dart';
 import 'controller/splash_controller.dart';
 import 'view/home_page.dart';
 import 'view/splash_page.dart';
 
 void main() {
+  Get.put(AuthController());
   runApp(const MyApp());
 }
 
@@ -32,5 +34,5 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/home', page: () => const HomePage()),
       ],
     );
-  } 
+  }
 }

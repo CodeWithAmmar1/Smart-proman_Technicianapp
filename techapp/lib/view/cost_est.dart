@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:techapp/view/invioce.dart';
 
 class CostEstPage extends StatelessWidget {
   const CostEstPage({super.key});
@@ -278,7 +280,9 @@ class CostEstPage extends StatelessWidget {
                 width: double.infinity,
                 height: 56,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(() => const InvoicePage());
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue.shade700,
                     shape: RoundedRectangleBorder(
