@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:techapp/view/quotation.dart';
 
 class FirPage extends StatefulWidget {
   const FirPage({super.key});
@@ -293,11 +295,7 @@ class _FirPageState extends State<FirPage> {
                         height: 56,
                         child: ElevatedButton(
                           onPressed: () {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(
-                                content: Text('FIR Report submitted'),
-                              ),
-                            );
+                            Get.to(() => const QuotationPage());
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.blue.shade700,
