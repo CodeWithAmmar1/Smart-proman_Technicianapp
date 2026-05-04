@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:techapp/view/fir.dart';
@@ -96,7 +94,6 @@ class TechInfo extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {
                   Get.to(() => const FirPage());
-                  log('Navigating to $label');
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue.shade700,
